@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "build": "node scripts/build.js",
+    "postinstall": "node scripts/build.js",
     "validate": "node scripts/validate.js",
     "validate:schema": "node scripts/validate-schema.js",
     "validate:breaking": "node scripts/validate-breaking.js",
