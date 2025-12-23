@@ -1,0 +1,39 @@
+{
+  "name": "@8825/design-tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for all 8825.systems applications",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/",
+    "tokens/"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "validate": "node scripts/validate.js",
+    "validate:schema": "node scripts/validate-schema.js",
+    "validate:breaking": "node scripts/validate-breaking.js",
+    "validate:contrast": "node scripts/validate-contrast.js",
+    "preview": "vite preview --open",
+    "prepublishOnly": "npm run validate && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jh-justinHarmon/8825-design-tokens.git"
+  },
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "8825",
+    "css-variables",
+    "tailwind"
+  ],
+  "author": "Justin Harmon",
+  "license": "MIT",
+  "devDependencies": {
+    "style-dictionary": "^4.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
